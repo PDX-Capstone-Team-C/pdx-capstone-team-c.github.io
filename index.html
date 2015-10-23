@@ -235,47 +235,45 @@ Trevor Eyre
 
     <!-- Contact -->
     <div class='wrapper style4'>
-        <form id='contact' class='container 75%'>
+        <article id='contact' class='container 75%'>
             <header>
                 <h2>Contact Us</h2>
             </header>
-            <div>
-                <div class='row'>
-                    <div class='12u'>
-                        <form method='post' action='#'>
-                            <div>
-                                <div class='row'>
-                                    <div class='6u 12u(mobile)'>
-                                        <input type='text' name='name' id='name' placeholder='Name' />
-                                    </div>
-                                    <div class='6u 12u(mobile)'>
-                                        <input type='text' name='email' id='email' placeholder='Email' />
-                                    </div>
-                                </div>
-                                <div class='row'>
-                                    <div class='12u'>
-                                        <input type='text' name='subject' id='subject' placeholder='Subject' />
-                                    </div>
-                                </div>
-                                <div class='row'>
-                                    <div class='12u'>
-                                        <textarea name='message' id='message' placeholder='Message'></textarea>
-                                    </div>
-                                </div>
-                                <div class='row 200%'>
-                                    <div class='12u'>
-                                        <ul class='actions'>
-                                            <li><input type='submit' name='submit' value='Send Message' /></li>
-                                            <li><input type='reset' value='Clear Form' class='alt' /></li>
-                                        </ul>
-                                    </div>
-                                </div>
+            <div class='row'>
+                <div class='12u'>
+                    <form action='//formspree.io/sieg@pdx.edu' method='POST'>
+                        <div class='row'>
+                            <div class='6u 12u(mobile)'>
+                                <input type='text' name='name' id='name' placeholder='Name' />
                             </div>
-                        </form>
-                    </div>
+                            <div class='6u 12u(mobile)'>
+                                <input type='text' name='_replyto' id='email' placeholder='Email' />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='12u'>
+                                <input type='text' name='_subject' id='subject' placeholder='Subject' />
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='12u'>
+                                <textarea name='message' id='message' placeholder='Message'></textarea>
+                            </div>
+                        </div>
+                        <div class='row 200%'>
+                            <div class='12u'>
+                                <ul class='actions'>
+                                    <li><input type='submit' name='submit' value='Send Message' /></li>
+                                    <li><input type='reset' value='Clear Form' class='alt' /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type='hidden' name='_next' value='#'>
+                        <input type='text' name='_gotcha' style='display:none'>
+                    </form>
                 </div>
             </div>
-        </form>
+        </article>
     </div>
     <div class='wrapper style2>
         <article id='footer' class='container 75%'>
