@@ -24,6 +24,10 @@
 	text-align: left;
 }
 
+.csc-fade-in {
+	opacity: 0;
+}
+
 @media screen and (min-width: 737px) {
 	.csc-box_info h3 {
 		margin-top: 0;
