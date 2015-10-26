@@ -1,3 +1,15 @@
+$(window).scroll(function () {
+    var scrollBottom = $(window).scrollTop() + $(window).height();
+    var fadeIn = $('.csc-fade-in');
+
+    fadeIn.each(function () {
+        if (scrollBottom > ($(this).offset().top + 96)) {
+            $(this).addClass('animated fadeInUp');
+        }
+    });
+});
+
+/*
 $('body').css('position', 'relative');
 $(window).scroll(function () {
     var fading = $('#team').find('img')
@@ -20,3 +32,4 @@ $(window).scroll(function () {
         $(this).fadeTo(0, opacity)
     });
 });
+*/
